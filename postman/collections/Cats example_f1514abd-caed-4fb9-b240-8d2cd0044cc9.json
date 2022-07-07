@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "f91d1bc6-c5a0-468c-9337-af8cfa989af4",
+		"name": "Cats example",
+		"description": "The cats API description",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cats",
+			"item": [
+				{
+					"name": "create",
+					"id": "3888e27e-e37b-424f-ae14-015f99975e6f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "<Bearer Token>",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"in sint commodo amet et\",\n  \"age\": 5351081.961115375,\n  \"breed\": \"fugiat\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/cats",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cats"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "ac1521ac-13ef-4f73-8dd5-4196aabd1beb",
+							"name": "response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: bearer",
+										"key": "Authorization",
+										"value": "Bearer <token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"in sint commodo amet et\",\n  \"age\": 5351081.961115375,\n  \"breed\": \"fugiat\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/cats",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cats"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n  \"name\": \"in sint commodo amet et\",\n  \"age\": 5351081.961115375,\n  \"breed\": \"fugiat\"\n}"
+						}
+					]
+				},
+				{
+					"name": "find One",
+					"id": "1ef2a100-9219-47cf-bc11-9a97f18e78aa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "<Bearer Token>",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/cats/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cats",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "5540ee28-2935-4a7b-984b-2e9efd49d902",
+									"key": "id",
+									"value": "ad deserunt Lorem",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "a295a199-9e6d-4eb4-9ee8-e6b2a828b674",
+							"name": "response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: bearer",
+										"key": "Authorization",
+										"value": "Bearer <token>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/cats/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cats",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "ad deserunt Lorem",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n  \"name\": \"in sint commodo amet et\",\n  \"age\": 5351081.961115375,\n  \"breed\": \"fugiat\"\n}"
+						}
+					]
+				}
+			],
+			"id": "9f661c22-e3fa-40d0-a28e-4dbd14126990"
+		}
+	],
+	"variable": [
+		{
+			"id": "267d74ed-7bb2-44ac-91e4-fa9a16239132",
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}
