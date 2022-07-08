@@ -26,4 +26,9 @@ export class CatsController {
   findOne(@Param('id') id: string): Cat {
     return this.catsService.findOne(+id);
   }
+
+  @Get('test')
+  testEndpoint(): string {
+    return 'test';
+  }
 }
