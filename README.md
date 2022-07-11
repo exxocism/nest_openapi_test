@@ -1,11 +1,9 @@
-### Swagger sample
+---
+description: Title and descriptions should be manually defined
+---
 
-### Installation
+# Cats API
 
-`npm install`
-
-### Running
-
-Once the application is running you can visit [http://localhost:3000/api](http://localhost:3000/api) to see the Swagger interface.
-
-See [here](https://docs.nestjs.com/recipes/swagger#bootstrap) for more information.
+{% swagger src="https://raw.githubusercontent.com/exxocism/nest_openapi_test/main/openapi.json" path="undefined" method="undefined" %}
+[https://raw.githubusercontent.com/exxocism/nest_openapi_test/main/openapi.json](https://raw.githubusercontent.com/exxocism/nest_openapi_test/main/openapi.json)
+{% endswagger %}
