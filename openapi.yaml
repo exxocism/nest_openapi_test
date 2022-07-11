@@ -56,7 +56,20 @@ paths:
       security: *a2
   /cats/add:
     get:
-      operationId: testApiAppend
+      operationId: testApiAppended
+      parameters: []
+      responses:
+        "200":
+          description: ""
+          content:
+            application/json:
+              schema:
+                type: string
+      tags: *a1
+      security: *a2
+  /cats/yes:
+    get:
+      operationId: anotherAPiAddTest
       parameters: []
       responses:
         "200":

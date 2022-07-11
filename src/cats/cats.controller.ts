@@ -33,7 +33,12 @@ export class CatsController {
   }
 
   @Get('add')
-  testApiAppend(): string {
+  testApiAppended(): string {
     return 'yes';
+  }
+
+  @Get('yes')
+  anotherAPiAddTest(): string {
+    return 'no';
   }
 }
