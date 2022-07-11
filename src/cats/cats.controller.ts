@@ -31,4 +31,9 @@ export class CatsController {
   testEndpoint(): string {
     return 'test';
   }
+
+  @Get('add')
+  testApiAppend(): string {
+    return 'yes';
+  }
 }

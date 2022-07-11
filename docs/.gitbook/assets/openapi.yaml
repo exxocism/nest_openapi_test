@@ -54,6 +54,19 @@ paths:
                 type: string
       tags: *a1
       security: *a2
+  /cats/add:
+    get:
+      operationId: testApiAppend
+      parameters: []
+      responses:
+        "200":
+          description: ""
+          content:
+            application/json:
+              schema:
+                type: string
+      tags: *a1
+      security: *a2
 info:
   title: Cats example
   description: The cats API description
