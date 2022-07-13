@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "b0b1ce94-6507-4a4e-b6ca-ec38156b2845",
-		"name": "Cats example",
+		"_postman_id": "85f56f74-d5d5-432b-a57a-a9edf524efd3",
+		"name": "asd",
 		"description": "The cats API description",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -11,7 +11,7 @@
 			"item": [
 				{
 					"name": "create",
-					"id": "4fff0aaa-bd17-4e19-a938-17d63bf22d42",
+					"id": "cfaf412a-76fd-4226-9a52-1cc9ce099791",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -39,7 +39,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"laboris Ut esse\",\n  \"age\": 19825623.66176088,\n  \"breed\": \"laborum sit quis\"\n}",
+							"raw": "{\n  \"name\": \"eu culpa\",\n  \"age\": -98040108.70171905,\n  \"breed\": \"irure nulla sit\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -58,7 +58,7 @@
 					},
 					"response": [
 						{
-							"id": "ce749449-ff76-4078-b487-1db49cf7f9da",
+							"id": "69b81d82-4049-43f6-8f63-881d20f023e9",
 							"name": "response",
 							"originalRequest": {
 								"method": "POST",
@@ -71,7 +71,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"name\": \"laboris Ut esse\",\n  \"age\": 19825623.66176088,\n  \"breed\": \"laborum sit quis\"\n}",
+									"raw": "{\n  \"name\": \"eu culpa\",\n  \"age\": -98040108.70171905,\n  \"breed\": \"irure nulla sit\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -91,16 +91,21 @@
 							"status": "Created",
 							"code": 201,
 							"_postman_previewlanguage": "json",
-							"header": null,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n  \"name\": \"laboris Ut esse\",\n  \"age\": 19825623.66176088,\n  \"breed\": \"laborum sit quis\"\n}"
+							"body": "{\n  \"name\": \"eu culpa\",\n  \"age\": -98040108.70171905,\n  \"breed\": \"irure nulla sit\"\n}"
 						}
 					]
 				},
 				{
 					"name": "find One",
-					"id": "0463ca84-573a-4e37-bf46-fa56354fd764",
+					"id": "3dbc05b4-246b-4608-80c7-c99aaeea10f3",
 					"request": {
 						"auth": {
 							"type": "bearer",
@@ -130,8 +135,9 @@
 							],
 							"variable": [
 								{
+									"id": "9e8721ba-4cc3-4215-873f-90be7b519e60",
 									"key": "id",
-									"value": "labore aliquip minim irure et",
+									"value": "ea cupidatat dolor",
 									"description": "(Required) "
 								}
 							]
@@ -139,7 +145,7 @@
 					},
 					"response": [
 						{
-							"id": "31f2a4a1-cda6-43f7-a0e1-a8ed54670c76",
+							"id": "66e99a2f-e31f-4757-9bb4-28e84989ddad",
 							"name": "response",
 							"originalRequest": {
 								"method": "GET",
@@ -162,7 +168,7 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": "labore aliquip minim irure et",
+											"value": "ea cupidatat dolor",
 											"description": "(Required) "
 										}
 									]
@@ -171,16 +177,21 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
-							"header": null,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n  \"name\": \"laboris Ut esse\",\n  \"age\": 19825623.66176088,\n  \"breed\": \"laborum sit quis\"\n}"
+							"body": "{\n  \"name\": \"eu culpa\",\n  \"age\": -98040108.70171905,\n  \"breed\": \"irure nulla sit\"\n}"
 						}
 					]
 				},
 				{
 					"name": "test Endpoint",
-					"id": "7c3776f3-3c66-4c5d-85fd-4ddd6c5d5af6",
+					"id": "8c93a179-d86f-407d-ab88-70c829821be9",
 					"request": {
 						"auth": {
 							"type": "bearer",
@@ -212,7 +223,7 @@
 					},
 					"response": [
 						{
-							"id": "df4017d1-0622-41bb-b614-b191c87e4e63",
+							"id": "91de2ce3-26dc-44fa-a7f8-c00a5a43b973",
 							"name": "response",
 							"originalRequest": {
 								"method": "GET",
@@ -237,16 +248,21 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
-							"header": null,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "\"labore aliquip minim irure et\""
+							"body": "\"ea cupidatat dolor\""
 						}
 					]
 				},
 				{
 					"name": "test Api Appended With Modified Name",
-					"id": "b46be5a5-fcab-49fa-be21-a3a2ee253446",
+					"id": "e91f4fe5-b41f-4c26-8c9f-cbf25e0db8fb",
 					"request": {
 						"auth": {
 							"type": "bearer",
@@ -278,7 +294,7 @@
 					},
 					"response": [
 						{
-							"id": "7e2d09cc-2bee-4f8a-9265-3bab53a11860",
+							"id": "79133c98-8c2e-40b3-ac86-1cb8554bb1e9",
 							"name": "response",
 							"originalRequest": {
 								"method": "GET",
@@ -303,16 +319,21 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
-							"header": null,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "\"labore aliquip minim irure et\""
+							"body": "\"ea cupidatat dolor\""
 						}
 					]
 				},
 				{
 					"name": "another A Pi Add Test",
-					"id": "06f51d86-8fd8-4835-8441-fca0a019c79e",
+					"id": "2823b4ab-0662-42a4-a879-82bbb6d85294",
 					"request": {
 						"auth": {
 							"type": "bearer",
@@ -325,12 +346,7 @@
 							]
 						},
 						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "{{baseUrl}}/cats/yes",
 							"host": [
@@ -344,7 +360,7 @@
 					},
 					"response": [
 						{
-							"id": "76f0b9cb-e4b8-4bb6-9b8d-7d09f699d907",
+							"id": "d1cad507-d644-48a2-99dc-0380a6471a80",
 							"name": "response",
 							"originalRequest": {
 								"method": "GET",
@@ -368,104 +384,29 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [],
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "\"labore aliquip minim irure et\""
-						}
-					]
-				},
-				{
-					"name": "find One",
-					"id": "fb91c69b-9971-41e0-a427-b717b6456ee0",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "<Bearer Token>",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "{{baseUrl}}/cats/no",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"cats",
-								"no"
-							],
-							"variable": [
-								{
-									"key": "id",
-									"value": "nulla in proident",
-									"description": "(Required) "
-								}
-							]
-						}
-					},
-					"response": [
-						{
-							"id": "4e0596c0-20a6-4c9a-b46e-dc5d374fbe45",
-							"name": "response",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"description": "Added as a part of security scheme: bearer",
-										"key": "Authorization",
-										"value": "Bearer <token>"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/cats/no",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"cats",
-										"no"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n \"name\": \"exercitation aute anim ex\",\n \"age\": -90062160.28628731,\n \"breed\": \"velit consectetur\"\n}"
-						}
-					],
-					"variable": [
-						{
-							"id": "4f5612e6-e70b-4fab-9130-4df2045145dc",
-							"key": "id",
-							"value": "nulla in proident",
-							"description": "(Required) "
+							"body": ""
 						}
 					]
 				}
 			],
-			"id": "224abcd0-d4ee-4310-a6bc-890e22b89117"
+			"id": "c2c1d960-2975-4313-94e5-f8f476bfdd16"
 		}
 	],
 	"variable": [
 		{
-			"id": "1392e62f-a98e-440e-823c-02e13ce9552f",
+			"id": "8886411c-62fe-4108-983c-52dd0a123344",
 			"key": "baseUrl",
-			"value": "/"
+			"value": "/",
+			"type": "string"
 		}
 	]
 }
