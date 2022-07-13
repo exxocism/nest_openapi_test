@@ -37,7 +37,7 @@ export class CatsController {
     return 'yes';
   }
 
-  @Get('yes2')
+  @Get('yes')
   anotherAPiAddTest(): { name: string } {
     return { name: 'test2' };
   }
