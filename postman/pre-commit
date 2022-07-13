@@ -11,7 +11,7 @@ echo "Generating OpenAPI Spec before commit..."
 exec npm run openapi >/dev/null
 
 if $? -ne 0; then
-  echo "OpenAPI Spec generation failed."
+  echo "OpenAPI Spec generation failed.\n run 'npm run start:dev' to see the error."
   exit 1
 fi
 
