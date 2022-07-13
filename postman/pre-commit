@@ -8,7 +8,7 @@
 # To enable this hook, rename this file to "pre-commit".
 
 # Current Version
-PRECOMMIT_VERSION=2
+PRECOMMIT_VERSION=3
 PRECOMMIT_PATH="$(git rev-parse --git-dir)/../postman/pre-commit"
 HOOK_PATH="$(git rev-parse --git-dir)/hooks/pre-commit"
 OPENAPI_PATH="$(git rev-parse --git-dir)/../postman/schemas/openapi.json"
@@ -39,5 +39,7 @@ if $? -ne 0; then
 fi
 
 echo "Generation successful."
-git add $OPENAPI_PATH
+
+sleep 1
+exec git add $OPENAPI_PATH
 exit 0

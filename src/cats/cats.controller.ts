@@ -41,9 +41,4 @@ export class CatsController {
   anotherAPiAddTest(): { name: string } {
     return { name: 'test' };
   }
-
-  @Get('newpoint')
-  newEndpoint(): { name: string } {
-    return { name: 'yes' };
-  }
 }
