@@ -435,12 +435,7 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
+							"header": null,
 							"cookie": [],
 							"responseTime": null,
 							"body": "\"Excepteur voluptate sun\""
@@ -453,7 +448,7 @@
 	],
 	"variable": [
 		{
-			"id": "2da8403f-427f-454f-ba96-97d6e49c6b8e",
+			"id": "6a6b237d-2481-43e7-b879-d8259b159b22",
 			"key": "baseUrl",
 			"value": "/"
 		}
