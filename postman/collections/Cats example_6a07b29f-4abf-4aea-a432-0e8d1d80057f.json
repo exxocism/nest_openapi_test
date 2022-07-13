@@ -1,0 +1,417 @@
+{
+	"info": {
+		"_postman_id": "b0b1ce94-6507-4a4e-b6ca-ec38156b2845",
+		"name": "Cats example",
+		"description": "The cats API description",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cats",
+			"item": [
+				{
+					"name": "create",
+					"id": "4fff0aaa-bd17-4e19-a938-17d63bf22d42",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "<Bearer Token>",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"laboris Ut esse\",\n  \"age\": 19825623.66176088,\n  \"breed\": \"laborum sit quis\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/cats",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cats"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "ce749449-ff76-4078-b487-1db49cf7f9da",
+							"name": "response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: bearer",
+										"key": "Authorization",
+										"value": "Bearer <token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"laboris Ut esse\",\n  \"age\": 19825623.66176088,\n  \"breed\": \"laborum sit quis\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/cats",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cats"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n  \"name\": \"laboris Ut esse\",\n  \"age\": 19825623.66176088,\n  \"breed\": \"laborum sit quis\"\n}"
+						}
+					]
+				},
+				{
+					"name": "find One",
+					"id": "0463ca84-573a-4e37-bf46-fa56354fd764",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "<Bearer Token>",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/cats/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cats",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "d3c48af8-6547-48e4-87af-b7933979cde1",
+									"key": "id",
+									"value": "labore aliquip minim irure et",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "31f2a4a1-cda6-43f7-a0e1-a8ed54670c76",
+							"name": "response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: bearer",
+										"key": "Authorization",
+										"value": "Bearer <token>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/cats/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cats",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "labore aliquip minim irure et",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n  \"name\": \"laboris Ut esse\",\n  \"age\": 19825623.66176088,\n  \"breed\": \"laborum sit quis\"\n}"
+						}
+					]
+				},
+				{
+					"name": "test Endpoint",
+					"id": "7c3776f3-3c66-4c5d-85fd-4ddd6c5d5af6",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "<Bearer Token>",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/cats/test",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cats",
+								"test"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "df4017d1-0622-41bb-b614-b191c87e4e63",
+							"name": "response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: bearer",
+										"key": "Authorization",
+										"value": "Bearer <token>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/cats/test",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cats",
+										"test"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "\"labore aliquip minim irure et\""
+						}
+					]
+				},
+				{
+					"name": "test Api Appended",
+					"id": "b46be5a5-fcab-49fa-be21-a3a2ee253446",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "<Bearer Token>",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/cats/add",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cats",
+								"add"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "7e2d09cc-2bee-4f8a-9265-3bab53a11860",
+							"name": "response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: bearer",
+										"key": "Authorization",
+										"value": "Bearer <token>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/cats/add",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cats",
+										"add"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "\"labore aliquip minim irure et\""
+						}
+					]
+				},
+				{
+					"name": "another A Pi Add Test",
+					"id": "06f51d86-8fd8-4835-8441-fca0a019c79e",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "<Bearer Token>",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/cats/yes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cats",
+								"yes"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "76f0b9cb-e4b8-4bb6-9b8d-7d09f699d907",
+							"name": "response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: bearer",
+										"key": "Authorization",
+										"value": "Bearer <token>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/cats/yes",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cats",
+										"yes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "\"labore aliquip minim irure et\""
+						}
+					]
+				}
+			],
+			"id": "224abcd0-d4ee-4310-a6bc-890e22b89117"
+		}
+	],
+	"variable": [
+		{
+			"id": "52e585f4-fb9f-41f7-8616-958b2a92d029",
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}
