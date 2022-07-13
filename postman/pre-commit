@@ -39,6 +39,6 @@ if $? -ne 0; then
 fi
 
 echo "Generation successful."
-sleep 1
-exec git add $OPENAPI_PATH
+echo $OPENAPI_PATH
+git add $OPENAPI_PATH
 exit 0
