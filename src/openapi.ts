@@ -2,6 +2,7 @@ import * as fs from 'fs';
 import { NestFactory } from '@nestjs/core';
 import { DocumentBuilder, SwaggerDocumentOptions, SwaggerModule } from '@nestjs/swagger';
 import { AppModule } from './app.module';
+import { exec } from 'child_process';
 
 export async function Generate_OpenAPI(): Promise<void> {
   const app = await NestFactory.create(AppModule);
@@ -21,6 +22,7 @@ export async function Generate_OpenAPI(): Promise<void> {
   fs.writeFileSync('./postman/schemas/openapi.json', JSON.stringify(document, null, 2));
   // fs.writeFileSync('./openapi.yaml', yaml.stringify(document, {}));
   SwaggerModule.setup('api', app, document, options);
+  exec('git add ./postman/schemas/openapi.json');
 
   console.log(`OpenAPI generated`);
   await app.close();

@@ -11,7 +11,6 @@
 PRECOMMIT_VERSION=1
 PRECOMMIT_PATH="$(git rev-parse --git-dir)/../postman/pre-commit"
 HOOK_PATH="$(git rev-parse --git-dir)/hooks/pre-commit"
-OPENAPI_PATH="$(git rev-parse --git-dir)/../postman/schemas/openapi.json"
 
 # Script Version Check
 if [ "$1" = "check-version" ]; then
@@ -30,15 +29,8 @@ if [ $NEW_VERSION -gt $PRECOMMIT_VERSION ]; then
   exit 1
 fi
 
+# FYI: after this point, the hook no longer runs, so you need to do it on openapi.ts
 echo "Generating OpenAPI Spec before commit..."
 exec npm run openapi >/dev/null
 
-if $? -ne 0; then
-  echo "OpenAPI Spec generation failed.\n run 'npm run openapi' to see and debug."
-  exit 1
-fi
-
-echo "Generation successful."
-echo $OPENAPI_PATH
-git add $OPENAPI_PATH
 exit 0

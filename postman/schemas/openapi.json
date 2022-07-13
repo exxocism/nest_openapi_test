@@ -124,7 +124,7 @@
         ]
       }
     },
-    "/cats/yes": {
+    "/cats/yes2": {
       "get": {
         "operationId": "anotherAPiAddTest",
         "parameters": [],
