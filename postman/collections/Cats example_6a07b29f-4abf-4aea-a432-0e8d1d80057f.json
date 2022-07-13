@@ -91,12 +91,7 @@
 							"status": "Created",
 							"code": 201,
 							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
+							"header": null,
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n  \"name\": \"laboris Ut esse\",\n  \"age\": 19825623.66176088,\n  \"breed\": \"laborum sit quis\"\n}"
@@ -135,7 +130,6 @@
 							],
 							"variable": [
 								{
-									"id": "d3c48af8-6547-48e4-87af-b7933979cde1",
 									"key": "id",
 									"value": "labore aliquip minim irure et",
 									"description": "(Required) "
@@ -177,12 +171,7 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
+							"header": null,
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n  \"name\": \"laboris Ut esse\",\n  \"age\": 19825623.66176088,\n  \"breed\": \"laborum sit quis\"\n}"
@@ -248,12 +237,7 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
+							"header": null,
 							"cookie": [],
 							"responseTime": null,
 							"body": "\"labore aliquip minim irure et\""
@@ -319,12 +303,7 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
+							"header": null,
 							"cookie": [],
 							"responseTime": null,
 							"body": "\"labore aliquip minim irure et\""
@@ -390,15 +369,76 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
+							"header": null,
 							"cookie": [],
 							"responseTime": null,
 							"body": "\"labore aliquip minim irure et\""
+						}
+					]
+				},
+				{
+					"name": "postman Add Api Test",
+					"id": "fb91c69b-9971-41e0-a427-b717b6456ee0",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "<Bearer Token>",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/cats/no",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cats",
+								"no"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "4e0596c0-20a6-4c9a-b46e-dc5d374fbe45",
+							"name": "response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: bearer",
+										"key": "Authorization",
+										"value": "Bearer <token>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/cats/no",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"cats",
+										"no"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": "\"Excepteur voluptate sun\""
 						}
 					]
 				}
@@ -408,10 +448,9 @@
 	],
 	"variable": [
 		{
-			"id": "52e585f4-fb9f-41f7-8616-958b2a92d029",
+			"id": "6a6b237d-2481-43e7-b879-d8259b159b22",
 			"key": "baseUrl",
-			"value": "/",
-			"type": "string"
+			"value": "/"
 		}
 	]
 }
