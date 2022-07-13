@@ -41,4 +41,9 @@ export class CatsController {
   anotherAPiAddTest(): string {
     return 'no';
   }
+
+  @Get('no')
+  postmanAddApiTest(): string {
+    return 'no';
+  }
 }
