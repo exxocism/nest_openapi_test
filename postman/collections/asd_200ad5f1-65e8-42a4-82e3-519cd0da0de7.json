@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "85f56f74-d5d5-432b-a57a-a9edf524efd3",
+		"_postman_id": "0d00ca23-ef37-40cf-aa0e-f677f4c91bf5",
 		"name": "asd",
 		"description": "The cats API description",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -11,7 +11,7 @@
 			"item": [
 				{
 					"name": "create",
-					"id": "cfaf412a-76fd-4226-9a52-1cc9ce099791",
+					"id": "69cdc039-b85a-4dc6-8021-dbfc2fed6f83",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -56,56 +56,11 @@
 							]
 						}
 					},
-					"response": [
-						{
-							"id": "69b81d82-4049-43f6-8f63-881d20f023e9",
-							"name": "response",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"description": "Added as a part of security scheme: bearer",
-										"key": "Authorization",
-										"value": "Bearer <token>"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n  \"name\": \"eu culpa\",\n  \"age\": -98040108.70171905,\n  \"breed\": \"irure nulla sit\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{baseUrl}}/cats",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"cats"
-									]
-								}
-							},
-							"status": "Created",
-							"code": 201,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n  \"name\": \"eu culpa\",\n  \"age\": -98040108.70171905,\n  \"breed\": \"irure nulla sit\"\n}"
-						}
-					]
+					"response": []
 				},
 				{
 					"name": "find One",
-					"id": "3dbc05b4-246b-4608-80c7-c99aaeea10f3",
+					"id": "f3d2e6a5-7502-4551-97d0-b1c7aebeba70",
 					"request": {
 						"auth": {
 							"type": "bearer",
@@ -135,7 +90,6 @@
 							],
 							"variable": [
 								{
-									"id": "9e8721ba-4cc3-4215-873f-90be7b519e60",
 									"key": "id",
 									"value": "ea cupidatat dolor",
 									"description": "(Required) "
@@ -143,55 +97,11 @@
 							]
 						}
 					},
-					"response": [
-						{
-							"id": "66e99a2f-e31f-4757-9bb4-28e84989ddad",
-							"name": "response",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"description": "Added as a part of security scheme: bearer",
-										"key": "Authorization",
-										"value": "Bearer <token>"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/cats/:id",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"cats",
-										":id"
-									],
-									"variable": [
-										{
-											"key": "id",
-											"value": "ea cupidatat dolor",
-											"description": "(Required) "
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n  \"name\": \"eu culpa\",\n  \"age\": -98040108.70171905,\n  \"breed\": \"irure nulla sit\"\n}"
-						}
-					]
+					"response": []
 				},
 				{
 					"name": "test Endpoint",
-					"id": "8c93a179-d86f-407d-ab88-70c829821be9",
+					"id": "f37e0309-bf7e-4905-9ede-c378193d5a3d",
 					"request": {
 						"auth": {
 							"type": "bearer",
@@ -221,48 +131,11 @@
 							]
 						}
 					},
-					"response": [
-						{
-							"id": "91de2ce3-26dc-44fa-a7f8-c00a5a43b973",
-							"name": "response",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"description": "Added as a part of security scheme: bearer",
-										"key": "Authorization",
-										"value": "Bearer <token>"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/cats/test",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"cats",
-										"test"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "\"ea cupidatat dolor\""
-						}
-					]
+					"response": []
 				},
 				{
 					"name": "test Api Appended With Modified Name",
-					"id": "e91f4fe5-b41f-4c26-8c9f-cbf25e0db8fb",
+					"id": "3ad2eb30-8de8-46d8-947a-cac9aeb12dd4",
 					"request": {
 						"auth": {
 							"type": "bearer",
@@ -292,48 +165,11 @@
 							]
 						}
 					},
-					"response": [
-						{
-							"id": "79133c98-8c2e-40b3-ac86-1cb8554bb1e9",
-							"name": "response",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"description": "Added as a part of security scheme: bearer",
-										"key": "Authorization",
-										"value": "Bearer <token>"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/cats/add",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"cats",
-										"add"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "\"ea cupidatat dolor\""
-						}
-					]
+					"response": []
 				},
 				{
 					"name": "another A Pi Add Test",
-					"id": "2823b4ab-0662-42a4-a879-82bbb6d85294",
+					"id": "71dfdc7e-2a5d-4083-960f-2aff31122b04",
 					"request": {
 						"auth": {
 							"type": "bearer",
@@ -348,65 +184,27 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{baseUrl}}/cats/yes",
+							"raw": "{{baseUrl}}/cats/yes2",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"cats",
-								"yes"
+								"yes2"
 							]
 						}
 					},
-					"response": [
-						{
-							"id": "d1cad507-d644-48a2-99dc-0380a6471a80",
-							"name": "response",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"description": "Added as a part of security scheme: bearer",
-										"key": "Authorization",
-										"value": "Bearer <token>"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/cats/yes",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"cats",
-										"yes"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "text",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "text/plain"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": ""
-						}
-					]
+					"response": []
 				}
 			],
-			"id": "c2c1d960-2975-4313-94e5-f8f476bfdd16"
+			"id": "41c1328f-04a3-4db8-9c1c-543aa44edac1"
 		}
 	],
 	"variable": [
 		{
-			"id": "8886411c-62fe-4108-983c-52dd0a123344",
+			"id": "3931a391-91f4-43fb-b99e-bcae3a628cd7",
 			"key": "baseUrl",
-			"value": "/",
-			"type": "string"
+			"value": "/"
 		}
 	]
 }
