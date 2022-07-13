@@ -100,7 +100,7 @@
     },
     "/cats/add": {
       "get": {
-        "operationId": "testApiAppended",
+        "operationId": "testApiAppendedWithModifiedName",
         "parameters": [],
         "responses": {
           "200": {
@@ -130,40 +130,7 @@
         "parameters": [],
         "responses": {
           "200": {
-            "description": "",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        },
-        "tags": [
-          "cats"
-        ],
-        "security": [
-          {
-            "bearer": []
-          }
-        ]
-      }
-    },
-    "/cats/no": {
-      "get": {
-        "operationId": "postmanAddApiTest",
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
+            "description": ""
           }
         },
         "tags": [

@@ -29,21 +29,16 @@ export class CatsController {
 
   @Get('test')
   testEndpoint(): string {
-    return 'test';
+    return 'test_but_changed_';
   }
 
   @Get('add')
-  testApiAppended(): string {
+  testApiAppendedWithModifiedName(): string {
     return 'yes';
   }
 
   @Get('yes')
-  anotherAPiAddTest(): string {
-    return 'no';
-  }
-
-  @Get('no')
-  postmanAddApiTest(): string {
-    return 'no';
+  anotherAPiAddTest(): { name: string } {
+    return { name: 'test' };
   }
 }

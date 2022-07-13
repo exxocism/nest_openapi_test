@@ -11,6 +11,7 @@
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
+    "openapi": "GENERATE_OPENAPI=true nest start",
     "lint": "eslint '{src,apps,libs,test}/**/*.ts' --fix",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -21,6 +22,7 @@
   "dependencies": {
     "@gitbook/openapi": "^0.1.0-beta.4",
     "@nestjs/common": "8.2.3",
+    "@nestjs/config": "^2.2.0",
     "@nestjs/core": "8.2.3",
     "@nestjs/platform-express": "8.2.3",
     "@nestjs/swagger": "5.1.5",
