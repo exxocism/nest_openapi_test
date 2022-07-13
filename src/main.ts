@@ -20,7 +20,7 @@ async function bootstrap() {
   };
   const document = SwaggerModule.createDocument(app, config, documentOptions);
   const options = { customSiteTitle: 'Sample API Documentation' };
-  fs.writeFileSync('./openapi.json', JSON.stringify(document, null, 2));
+  fs.writeFileSync('./postman/schemas/openapi.json', JSON.stringify(document, null, 2));
   // fs.writeFileSync('./openapi.yaml', yaml.stringify(document, {}));
   SwaggerModule.setup('api', app, document, options);
 
