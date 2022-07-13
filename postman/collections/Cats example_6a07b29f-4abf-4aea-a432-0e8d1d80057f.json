@@ -245,7 +245,7 @@
 					]
 				},
 				{
-					"name": "test Api Appended",
+					"name": "test Api Appended With Modified Name",
 					"id": "b46be5a5-fcab-49fa-be21-a3a2ee253446",
 					"request": {
 						"auth": {
@@ -369,7 +369,7 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
-							"header": null,
+							"header": [],
 							"cookie": [],
 							"responseTime": null,
 							"body": "\"labore aliquip minim irure et\""
@@ -377,7 +377,7 @@
 					]
 				},
 				{
-					"name": "postman Add Api Test",
+					"name": "find One",
 					"id": "fb91c69b-9971-41e0-a427-b717b6456ee0",
 					"request": {
 						"auth": {
@@ -405,6 +405,13 @@
 							"path": [
 								"cats",
 								"no"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "nulla in proident",
+									"description": "(Required) "
+								}
 							]
 						}
 					},
@@ -438,7 +445,15 @@
 							"header": null,
 							"cookie": [],
 							"responseTime": null,
-							"body": "\"Excepteur voluptate sun\""
+							"body": "{\n \"name\": \"exercitation aute anim ex\",\n \"age\": -90062160.28628731,\n \"breed\": \"velit consectetur\"\n}"
+						}
+					],
+					"variable": [
+						{
+							"id": "4f5612e6-e70b-4fab-9130-4df2045145dc",
+							"key": "id",
+							"value": "nulla in proident",
+							"description": "(Required) "
 						}
 					]
 				}
@@ -448,7 +463,7 @@
 	],
 	"variable": [
 		{
-			"id": "6a6b237d-2481-43e7-b879-d8259b159b22",
+			"id": "1392e62f-a98e-440e-823c-02e13ce9552f",
 			"key": "baseUrl",
 			"value": "/"
 		}
