@@ -7,12 +7,36 @@
 #
 # To enable this hook, rename this file to "pre-commit".
 
+# Current Version
+PRECOMMIT_VERSION=1
+PRECOMMIT_PATH="$(git rev-parse --git-dir)/../postman/pre-commit"
+HOOK_PATH="$(git rev-parse --git-dir)/hooks/pre-commit"
+
+# Script Version Check
+if [ "$1" = "check-version" ]; then
+  echo $PRECOMMIT_VERSION
+  exit $PRECOMMIT_VERSION
+fi
+
+echo "Checking for new version of hook... "
+NEW_VERSION=$($PRECOMMIT_PATH check-version)
+
+if [ $NEW_VERSION -gt $PRECOMMIT_VERSION ]; then
+  echo "New version of hook found. Updating..."
+  cp -f $PRECOMMIT_PATH $HOOK_PATH
+  chmod +x $HOOK_PATH
+  echo "Done. Please commit again."
+  exit 1
+fi
+
 echo "Generating OpenAPI Spec before commit..."
 exec npm run openapi >/dev/null
 
 if $? -ne 0; then
-  echo "OpenAPI Spec generation failed.\n run 'npm run start:dev' to see the error."
+  echo "OpenAPI Spec generation failed.\n run 'npm run openapi' to see and debug."
   exit 1
 fi
 
+echo "Generation successful."
+exec git add ./postman/schemas/openapi.json
 exit 0
